@@ -1,0 +1,67 @@
+.account-container {
+  width: 350px;
+  margin: 60px auto;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 18px rgba(59, 130, 246, 0.2);
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.account-container h2 {
+  font-size: 22px;
+  color: #1e3a8a;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.account-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.account-form input {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #cbd5e1;
+  outline: none;
+  font-size: 15px;
+  transition: 0.2s ease-in-out;
+}
+
+.account-form input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 4px rgba(37, 99, 235, 0.3);
+}
+
+.account-btn {
+  background: linear-gradient(145deg, #2563eb, #1d4ed8);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease-in-out;
+}
+
+.account-btn:hover {
+  background: linear-gradient(145deg, #1e40af, #2563eb);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+}
+
+.switch-text {
+  color: #2563eb;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 12px;
+  text-decoration: underline;
+  transition: color 0.3s;
+}
+
+.switch-text:hover {
+  color: #1e40af;
+}

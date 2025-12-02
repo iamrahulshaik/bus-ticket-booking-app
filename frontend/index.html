@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wegoo Bus Booking</title>
+
+    <!-- ✅ Load Razorpay before React -->
+    <script>
+      window.addEventListener("load", () => {
+        const script = document.createElement("script");
+        script.src = "https://checkout.razorpay.com/v1/checkout.js";
+        script.async = false; // IMPORTANT
+        document.body.appendChild(script);
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- ✅ Vite main entry file -->
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

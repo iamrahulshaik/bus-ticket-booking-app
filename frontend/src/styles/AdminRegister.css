@@ -1,0 +1,104 @@
+/* ===== Page Background ===== */
+body {
+  background-image: url("frontend\src\images\The bus rides along the city road against the background of houses _ Tashaa36.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Container ===== */
+.register-container {
+  max-width: 520px;
+  margin: 50px auto;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 70, 150, 0.15);
+  text-align: center;
+  transition: 0.3s ease-in-out;
+}
+
+.register-container:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(0, 70, 150, 0.25);
+}
+
+/* ===== Title ===== */
+.register-title {
+  font-size: 1.9rem;
+  color: #1e40af;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* ===== Form Styling ===== */
+.register-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* ===== Inputs and Dropdowns ===== */
+.register-form input,
+.register-form select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1.5px solid #c7d7fe;
+  background: #f8fafc;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1e293b;
+  transition: 0.3s ease;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 8px rgba(96, 165, 250, 0.5);
+  outline: none;
+}
+
+/* ===== Labels ===== */
+label {
+  text-align: left;
+  font-size: 14px;
+  color: #475569;
+  font-weight: 600;
+  margin-bottom: -10px;
+}
+
+/* ===== Button ===== */
+.register-btn {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: 0.3s ease;
+}
+
+.register-btn:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #1d4ed8, #1e3a8a);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 600px) {
+  .register-container {
+    max-width: 90%;
+    padding: 25px;
+  }
+
+  .register-title {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,130 @@
+/* ---------- General Page Styles ---------- */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: url("frontend\src\images\The bus rides along the city road against the background of houses _ Tashaa36.jpeg")
+    no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
+  position: relative;
+}
+
+/* Add a soft overlay to make text readable over the image */
+.form_container {
+  background-color: rgba(213, 100, 100, 0.8);
+  max-width: 700px;
+  margin: 90px auto;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(4px);
+}
+
+/* ---------- User Info ---------- */
+.user-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fef6e4;
+  border: 1px solid #ffd6a5;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.logout-btn {
+  background-color: #ffb5a7;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  background-color: #f28482;
+}
+
+/* ---------- Form Layout ---------- */
+.form1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input_row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.input_field {
+  width: 100%;
+  max-width: 210px;
+  padding: 10px 12px;
+  border: 1px solid #cdb4db;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-size: 15px;
+}
+
+.input_field:focus {
+  border-color: #bde0fe;
+  box-shadow: 0 0 6px rgba(189, 224, 254, 0.8);
+}
+
+/* ---------- Dropdown ---------- */
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-height: 180px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.dropdown li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.dropdown li:hover {
+  background-color: #f0efeb;
+}
+
+/* ---------- Error Message ---------- */
+.error_message {
+  color: #e63946;
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+
+/* ---------- Search Button ---------- */
+.search_btn {
+  align-self: center;
+  padding: 12px 28px;
+  background-color: #a2d2ff;
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.search_btn:hover {
+  background-color: #bde0fe;
+  transform: translateY(-2px);
+}
