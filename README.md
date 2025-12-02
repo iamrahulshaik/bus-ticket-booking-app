@@ -24,30 +24,83 @@ The goal is to let users search for buses between cities and (later) book seats.
 ## 📁 Project Structure
 
 ```bash
-wegooo/
+BUS_BOOKING/
 │
-├── BACKEND/
+├── api/                          # Django REST API app
+│   ├── migrations/
+│   ├── __pycache__/
+│   ├── admin.py
+│   ├── apps.py
+│   ├── models.py
+│   ├── serializers.py
+│   ├── tests.py
+│   ├── urls.py
+│   └── views.py
+│
+├── backend/                      # Django backend project
+│   ├── __pycache__/
+│   ├── asgi.py
 │   ├── manage.py
-│   ├── wegooo/
-│   │   ├── settings.py
-│   │   ├── urls.py
-│   │   └── ...
-│   └── api/
-│       ├── views.py
-│       ├── models.py
-│       ├── urls.py
-│       └── ...
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
 │
-└── FRONTEND/
-    └── wegooo-frontend/
-        ├── index.html
-        ├── package.json
-        └── src/
-            ├── Components/
-            │   ├── Navbar.jsx
-            │   ├── Navbar.css
-            │   ├── Form1.jsx
-            │   └── Form1.css
-            ├── App.jsx
-            ├── main.jsx
-            └── index.css
+├── frontend/                     # React frontend
+│   ├── node_modules/
+│   ├── public/
+│   └── src/
+│       ├── api/
+│       │   ├── api.js
+│       │   └── index.js
+│       │
+│       ├── assets/
+│       │   └── react.svg
+│       │
+│       ├── components/
+│       │   ├── Account.jsx
+│       │   ├── BusCard.jsx
+│       │   ├── Footer.jsx
+│       │   ├── Form1.jsx
+│       │   ├── Navbar.jsx
+│       │   ├── SearchBuses.jsx
+│       │   └── SeatMap.jsx
+│       │
+│       ├── images/
+│       │   └── The bus rides along the city road ….jpeg
+│       │
+│       ├── pages/
+│       │   ├── About.jsx
+│       │   ├── Account.jsx
+│       │   ├── AdminRegister.jsx
+│       │   ├── BusResults.jsx
+│       │   ├── Checkout.jsx
+│       │   ├── Home.jsx
+│       │   ├── Login.jsx
+│       │   ├── MyBookings.jsx
+│       │   ├── Search.jsx
+│       │   └── SeatSelection.jsx
+│       │
+│       ├── styles/
+│       │   ├── account.css
+│       │   ├── AdminRegister.css
+│       │   ├── buscard.css
+│       │   ├── form.css
+│       │   ├── home.css
+│       │   ├── navbar.css
+│       │   ├── results.css
+│       │   └── seatselection.css
+│       │
+│       ├── App.css
+│       ├── App.jsx
+│       ├── Checkout.jsx
+│       ├── index.css
+│       ├── main.jsx
+│       ├── index.html
+│       ├── package.json
+│       ├── package-lock.json
+│       ├── vite.config.js
+│       └── README.md
+│
+├── .gitignore
+└── package.json
+
